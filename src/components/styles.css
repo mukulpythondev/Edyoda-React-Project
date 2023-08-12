@@ -1,0 +1,426 @@
+/* Add this CSS to your styles.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    height: 60px;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .left h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 10px;
+    background: linear-gradient(122deg, #0096FF 42.14%, #0048FF 96.70%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  }
+  
+  .left h3 {
+    font-size: 16px;
+    margin: 0 -10px 0 0;
+  }
+  
+  .left img {
+    width: 16px;
+    height: 16px; 
+    vertical-align: middle;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .right img {
+    width: 24px; 
+    height: 24px; 
+    cursor: pointer;
+  }
+  
+  .right h3 {
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  .right button {
+    padding: 10px 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background: linear-gradient(224deg, #0048FF 0%, #0096FF 100%);
+    border: none;
+    
+  }
+
+
+ .main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+
+  font-family: Roboto;
+  color: white;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0C1830, rgb(14, 27, 54), #0C1830);
+}
+
+.left-content {
+  flex: 1;
+}
+
+h2 {
+  font-size: 42px;
+  margin-bottom: 50px;
+  font-family: 'Raleway';
+}
+
+
+.strike {
+  position: relative;
+  color: white; 
+  font-family: Roboto;
+}
+
+.strike::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background-color: red; 
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+}
+
+
+.features-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features-list li {
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.feature-icon {
+  margin-right: 15px;
+  width: 32px; 
+  height: 32px; 
+  
+  padding: 5px; 
+}
+
+li>span{
+  color:#0096FF;
+
+}
+.price{
+  color:#0096FF;
+  font-family: Roboto;
+}
+
+.live-text {
+  position: absolute;
+  top: 60%;
+  left: 3.3%;
+  z-index: 1; 
+  padding: 5px;
+  font-size: 10px; 
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.package-panel {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 75vh;
+  color: black;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+.top-icons {
+  display: flex;
+  gap: 110px;
+  align-items: center;
+  margin-left: 75px;
+}
+
+.package-panel h3 {
+  text-align: center;
+ margin-top: 5px;
+}
+
+.top-icons img {
+  width: 70px;
+  height: 50px;
+}
+
+.package-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.package-box {
+  background-color: #FFF;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(90% - 10px);
+  height: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+border: 2px solid #BEBEBE;
+position: relative;
+}
+/* CSS for the radio icon, subscription time, and total price */
+.package-box .box-header {
+  display: flex;
+  align-items: center;
+}
+
+.radio-icon {
+  margin-right: 10px;
+}
+
+.subscription-time {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #333;
+}
+.subscription-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.box-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-right: -150px;
+}
+
+.monthly-rate {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: -25px;
+
+}
+
+.bold-text {
+  font-weight: bold;
+  color: #333;
+}
+small{font-size: 14px;
+font-weight: 500;}
+.mon-text {
+  color: #888;
+}
+
+
+.package-box:first-child {
+  border-radius: 4px;
+  border: 2px solid #BEBEBE;
+  background: #E7E7E7;
+  font-weight: 200;
+  color: gray;
+}
+.gray-text{
+  color: gray;
+}
+.tag {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  padding: 2px 10px;
+   font-size: 10px;
+  background-color: #FF0000;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-radius: 4px 4px 0 0;
+}
+
+.tag-expired {
+  background-color: #FF0000; 
+}
+
+.tag-recommended {
+  background-color: #47BA68; 
+}
+
+.package-box.selected {
+  border-radius: 4px;
+border: 2px solid #47BA68;
+background: #D7EDDD;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+}
+
+.radio-icon {
+  margin-right: 10px;
+}
+
+.additional-container {
+  margin-top: 10px;
+  border-top: 2px solid #BEBEBE;
+  padding: 10px 10px;
+}
+
+.subscription-fee {
+  text-align: left;
+  font-size: 18px;
+   margin-bottom: 8px;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;   
+}
+.subscription-fee span:last-child {
+  font-weight: 500; 
+  font-size: 16px;
+}
+.limited-offer-box {
+  background: linear-gradient(
+    135deg,
+    rgba(222, 67, 19, 0.20) 0%,
+    rgba(222, 67, 19, 0.20) 0.75%,
+    rgba(222, 67, 19, 0.20) 2.92%,
+    rgba(222, 68, 20, 0.20) 6.37%,
+    rgba(223, 69, 21, 0.20) 10.97%,
+    rgba(223, 72, 22, 0.20) 16.59%,
+    rgba(224, 75, 24, 0.20) 23.10%,
+    rgba(225, 80, 27, 0.20) 30.37%,
+    rgba(227, 86, 31, 0.20) 38.27%,
+    rgba(229, 94, 36, 0.20) 46.66%,
+    rgba(231, 104, 43, 0.20) 55.41%,
+    rgba(235, 117, 51, 0.20) 64.39%,
+    rgba(238, 132, 60, 0.20) 73.47%,
+    rgba(243, 149, 71, 0.20) 82.52%,
+    rgba(248, 169, 84, 0.20) 91.41%,
+    rgba(254, 193, 99, 0.20) 100%
+  );
+  border-radius: 8px;
+  padding: 20px;
+  padding-top: 2px;
+  color: #de4313;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 20px;
+  text-align: left;
+  border: 1px solid #de4313;
+}
+
+.offer-text {
+  font-size: 14px;
+ 
+}
+.offer-code {
+  float: right;
+  color: #DE4313;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: -15px;
+  color: black;
+}
+
+.offer-details {
+  display: flex;
+  font-size: 12px;
+  font-weight: 200;
+  margin-top: 5px;
+}
+
+.offer-details img {
+  width: 20px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.total-price {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+
+.total-price-amount {
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+.cancel-button,
+.proceed-button {
+  border-radius: 4px;
+  padding: 10px 25px;
+  margin: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  border: 2px solid #f77171;
+  color: #f77171;
+  padding: 10px 50px;
+}
+
+.proceed-button {
+  background: #47ba68;
+  color: white;
+}
